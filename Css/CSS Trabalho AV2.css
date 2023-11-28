@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@300;400&family=DM+Serif+Display:ital@1&family=Mohave&family=Gayathri&family=Bebas+Neue&family=Staatliches&display=swap');
+
+html {
+    width: auto;
+    height: auto;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    margin: 0%;
+}
+
+.hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+}
+
+#logo {
+    max-width: 200px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 0px;
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    align-items: center;
+}
+
+
+#nv {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    margin: auto;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.navi {
+    padding: 50px;
+    padding-top: 0%;
+    color: black;
+    text-decoration: none;
+    margin-right: 0px;
+}
+
+.navi:hover {
+    color: #ff0000;
+}
+
+#nv li {
+    position: relative;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+}
+
+#nv li::before,
+#nv li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff0000;
+    transition: width 0.3s;
+}
+
+#nv li::before {
+    left: 0;
+    top: 100%;
+}
+
+#nv li::after {
+    right: 0;
+    bottom: 100%;
+}
+
+#nv li:hover::before,
+#nv li:hover::after {
+    width: 100%;
+}
+
+.bd{
+    height: auto;
+    width: 75%;
+}
+
+.rds {
+    text-align: center;
+    padding: 0%;
+    margin-top: 0%;
+}
+
+.imgRds {
+    width: 20%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.perfil {
+    font-family: 'Phudu', cursive;
+    font-size: 35px;
+    color: red;
+    padding-left: 0%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.vdRds {
+    text-align: center;
+    padding: 0%;
+    height: 400px;
+    width: 900px;
+    border-radius: 10px;
+}
+
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+.ft {
+    width: auto;
+    height: auto;
+    color: white;
+    background-color: black;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#imgft {
+    padding-top: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+.hm {
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.tt {
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-inline: 0;
+    background-image: linear-gradient(to right, black, gray);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    font-family: 'Archivo Black', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pe {
+    align-self: flex-start;
+    padding: 10px;
+}
+
+.pd {
+    padding: 10px;
+    align-self: flex-end;
+}
+
+.asd {
+    height: 2000px;
+    width: 23%;
+    position: absolute;
+    right: 10px;
+    top: 130px;
+}
+
+#imgAsd{
+    width: 100%;
+    height: 100%;
+}
+
+.cont {
+    width: 290px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exp {
+    height: auto;
+}
+
+.expCont {
+    display: none;
+    margin: 10px 0;
+    font-family: 'Gayathri', sans-serif;
+    color: black;
+}
+
+.exp .expCont {
+    display: block;
+}
+
+
+.bot {
+    font-family: 'Mohave', sans-serif;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: #ff0000;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+
+.cont img {
+    border-bottom: 3px solid black;
+    margin: 0;
+    width: 100%;
+    height: 190px;
+}
+
+.ttnoti {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.noti {
+    display: inline-blxock;
+    text-align: center;
+}
+
+.mural {
+    display: flex;
+    justify-content: left;
+    height: auto;
+    width: 1140px;
+}
+
+.boxHist {
+    width: 95%;
+    background-color: #cccccc;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    box-shadow: 10px 5px 5px #e6e6e6;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.imgHist {
+    border-radius: 10px;
+    margin: 0px;
+    margin-right: 10px;
+    width: 30%;
+    height: auto;
+    box-shadow: 10px 5px 5px #e6e6e6;
+}
+
+.ttHist {
+    color: #ff0000;
+    font-size: 50px;
+    margin: 10px;
+    flex-grow: 1;
+    font-family: 'DM Serif Display', serif;
+}
+
+.textHist {
+    font-size: 20px;
+    margin: 10px;
+    flex-grow: 2;
+    font-family: 'Gayathri', sans-serif;
+}
+
+
+.ttEst {
+    margin: 15px;
+    font-size: 60px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    color: red;
+}
+
+.est {
+    background-color: #cccccc;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.txtEst {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+}
+
+.imgTtEst {
+    width: 100%;
+    height: auto;
+}
+
+.imgEst {
+    flex: 1;
+    max-width: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+#tamTab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.tabBras {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+    height: 900px;
+}
+
+.tabBras th,
+.tabBras td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabBras th {
+    background-color: #2eb82e;
+    color: white;
+}
+
+.posVasco {
+    background-color: #9999ff;
+}
+
+.libert {
+    background-color: #00e600;
+}
+
+.preLibert {
+    background-color: #66ff66;
+}
+
+.sula {
+    background-color: #ff8533;
+}
+
+.reb {
+    background-color: #ff4d4d;
+}
+
+.leg {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#legenda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#quadradoLib {
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #00e600;
+    margin-right: 10px;
+}
+
+#quadradoSula {
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #ff8533;
+    margin-right: 10px;
+}
+
+#quadradoPreLib {
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #66ff66;
+    margin-right: 10px;
+}
+
+
+#quadradoReb {
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #ff4d4d;
+    margin-right: 10px;
+}
+
+.elenco {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    margin: 10px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.frente,
+.verso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.frente {
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, black, white);
+}
+
+.verso {
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, black, white);
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+.numJog {
+    font-size: 90px;
+    position: absolute;
+    top: 10px;
+    margin-top: 0px;
+    left: 30px;
+    color: white;
+}
+
+.nomJogador {
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.imgJog {
+    position: absolute;
+    bottom: 0px;
+    right: -75px;
+    width: 300px;
+    height: 290px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 0;
+}
+
+.imgVerso {
+    width: 20%;
+    height: 20%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+.txtVerso {
+    font-size: 20px;
+    color: red;
+    margin-top: 0px;
+    padding: 0px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
